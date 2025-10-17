@@ -29,6 +29,16 @@
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
+print()
+print("Task 1 - Collect multiple inputs and output a list")
+print()
+friend1 = input("Write your first friends name: ")
+friend2 = input("Write your second friends name: ")
+friend3 = input("Write your third friends name: ")
+friend_list = [friend1, friend2, friend3]
+for name in friend_list:
+    print("Hello " + name, "How have you been?")
+print()
 
 
 
@@ -59,7 +69,21 @@
 #     print("Message for other cases")
 
 # Write your code below:
-
+print()
+print("Task 2: Number Input and Decisions")
+print()
+count = 0
+sec_num = 
+guess_num = int(input("Enter a number between 1 and 100: "))
+while sec_num != guess_num:
+    if guess_num < sec_num:
+        guess_num = int(input("Too low! Guess again: ")) 
+        count = count + 1
+    elif guess_num > sec_num:
+        guess_num = int(input("Too high Guess again: ")) 
+        count = count + 1
+print(f"You got the number and it took you {count} guesses!")
+print()
 
 
 # -------------------------------------------
@@ -84,7 +108,30 @@
 #     #     print("Check your answer")
 
 # Write your code below:
-
+print()
+print("Task 3: Mini Quiz Project Using a List")
+count = 0
+q1 = "What is the square root of 64? "
+q2 = "What is quarter past six pm in the 24 hour clock? "
+q3 = "what is the Russian equivalent of the American Astronaut? "
+q_list = [q1, q2, q3]
+for question in q_list:
+    answer = input(question )
+    if question == q1 and answer == "8":
+        print("Correct!") 
+        count = count + 1
+        print(f"Current score {count}")
+    elif question == q2 and answer == "18:15":
+        print("Correct!")
+        count = count + 1
+        print(f"Current score {count}")
+    elif question == q3 and answer == "Cosmonaut":
+        print("Correct!")
+        count = count + 1
+        print(f"Final score {count}")
+    else:
+        print("Incorrect. Try again.")
+print()
 
 
 # -------------------------------------------
